@@ -8,7 +8,7 @@ from pynput import keyboard, mouse
 import struct
 import time
 
-HOST = "192.168.1.195"  # Ubuntu IP
+HOST = "192.168.1.195"  # Target IP
 PORT_STREAM = 5001
 PORT_MOUSE = 5003
 
@@ -142,7 +142,7 @@ def main():
             if not frame_queue.empty():
                 frame = frame_queue.get()
                 cv2.imshow("Remote Screen", frame)
-                cv2.resizeWindow("Remote Screen", SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)
+                cv2.resizeWindow("Remote Screen", SCREEN_WIDTH, SCREEN_HEIGHT)
             
             status = "ACTIVE" if mouse_enabled else "INACTIVE"
             cv2.setWindowTitle("Remote Screen", f"Remote Screen - [{status}]")

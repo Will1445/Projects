@@ -1,6 +1,6 @@
 import socket
 
-HOST = "192.168.1.129"  # Ubuntu's IP address
+HOST = "192.168.1.195"  # Ubuntu's IP address
 PORT = 5000
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -8,9 +8,19 @@ client.connect((HOST, PORT))
 
 def send_command(command):
     client.sendall(command.encode())
+
     if command.startswith("cmd:"):
-        response = client.recv(4096).decode()  # Get command output
-        print(f"Response:\n{response}")
+        data = b""
+        while b"<<END>>" not in data:
+            chunk = client.recv(4096)
+            if not chunk:
+                break
+            data += chunk
+
+        data = data.replace(b"<<END>>", b"")
+        print("Response:\n" + data.decode())
+
+
 
 while True:
     text = input("Type command: ")

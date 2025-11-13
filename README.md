@@ -22,6 +22,9 @@ A collection of small, self-contained projects developed to enhance coding skill
 - Explore quantum circuits, gates, and quantum state manipulation
 
 ### Remote Access Trojan
+
+https://github.com/user-attachments/assets/c314f649-42a4-41e6-b960-95613c855e65
+
 **Remote Administration Tool**
 - Client-server architecture for remote system management
 - **Features:**
@@ -66,6 +69,17 @@ https://github.com/user-attachments/assets/c3cc32d8-d1da-4a41-9bc5-0c9b64f1e7db
   - ML-powered hand tracking via webcam
   - Gesture-based scrolling on macOS
 
+### Duolingo Solver
+
+https://github.com/user-attachments/assets/35436878-f191-4481-8872-89d29c68ee4a
+
+**Language Exercise Automator**
+- Automated solution for Duolingo Spanish exercises
+- **Setup:**
+  - Chrome debug mode required
+  - Start practice session before execution
+- **Status:** Limited question coverage (see `utils/` for supported types)
+
 ### Epicycles Visualiser
 
 https://github.com/user-attachments/assets/a47fe299-442e-42d7-ab8d-fe27bc7acc1d
@@ -78,17 +92,6 @@ https://github.com/user-attachments/assets/a47fe299-442e-42d7-ab8d-fe27bc7acc1d
   3. Click again to complete
   4. Watch Fourier decomposition in real-time
 - Mathematical visualization of rotating epicycles
-
-### Duolingo Solver
-
-https://github.com/user-attachments/assets/35436878-f191-4481-8872-89d29c68ee4a
-
-**Language Exercise Automator**
-- Automated solution for Duolingo Spanish exercises
-- **Setup:**
-  - Chrome debug mode required
-  - Start practice session before execution
-- **Status:** Limited question coverage (see `utils/` for supported types)
 
 ## Skills
 
