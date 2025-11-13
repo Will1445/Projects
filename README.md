@@ -10,7 +10,7 @@ These are small, self-contained projects that I work on to further my coding ski
 ## Remote Access Trojan
 
 - The target and recipient half of a remote access trojan
-- This is set to receive data from the c++ compiled executable ran on the target machine
+- This is set to receive data from the C++ compiled executable ran on the target machine
 - Allows the user to access the target's command line along with live screen viewing and keylogger options 
 - This directory contains its own README to explain the core functionality further
 
