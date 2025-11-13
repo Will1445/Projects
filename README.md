@@ -31,6 +31,9 @@ A collection of small, self-contained projects developed to enhance coding skill
 - See project's README for detailed functionality and usage
 
 ### Spotify Logger
+
+https://github.com/user-attachments/assets/c3cc32d8-d1da-4a41-9bc5-0c9b64f1e7db
+
 **Music Listening Analytics**
 - Tracks and logs Spotify listening history to local database
 - **Components:**

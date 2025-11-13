@@ -637,7 +637,7 @@ def get_past_week_data():
         SELECT * FROM playback_history
         WHERE timestamp >= ?
         ORDER BY timestamp DESC
-        LIMIT 25
+        LIMIT 5
     """, (week_ago,))
     recent_songs = cursor.fetchall()
 

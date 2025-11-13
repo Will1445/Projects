@@ -71,7 +71,6 @@ try:
                 try:
                     artist_info = sp.artist(artist_id)
                     genres = artist_info.get('genres', [])
-                    print(genres)
                     genre_str = ', '.join(genres) if genres else 'Unknown'
                 except Exception:
                     genre_str = 'Unknown'
