@@ -67,7 +67,7 @@ A collection of small, self-contained projects developed to enhance coding skill
 
 ### Duolingo Solver
 
-![Demo Animation](./demos/Duolingo.gif)
+![Demo Animation](Demos/Duolingo.gif)
 
 **Language Exercise Automator**
 - Automated solution for Duolingo Spanish exercises
