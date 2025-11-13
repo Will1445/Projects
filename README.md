@@ -59,6 +59,9 @@ https://github.com/user-attachments/assets/c3cc32d8-d1da-4a41-9bc5-0c9b64f1e7db
   - Gesture-based scrolling on macOS
 
 ### Epicycles Visualiser
+
+https://github.com/user-attachments/assets/a47fe299-442e-42d7-ab8d-fe27bc7acc1d
+
 **Fourier Series Animation**
 - Demonstrates Fourier series approximation of 2D shapes
 - **Usage:**
