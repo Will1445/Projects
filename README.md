@@ -43,6 +43,14 @@ https://github.com/user-attachments/assets/c3cc32d8-d1da-4a41-9bc5-0c9b64f1e7db
 - Builds personalized music listening statistics
 
 ### Optical Raytracer
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/a4af1e98-ed78-484e-ad06-4d432bbb601a" width="400"></td>
+    <td><img src="https://github.com/user-attachments/assets/a92451b2-9ec9-4ebe-aa5d-f510f08854ba" width="400"></td>
+  </tr>
+</table>
+
 **Light Propagation Simulator**
 - Simulates optical ray paths through various lens configurations
 - **Features:**
