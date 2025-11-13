@@ -67,10 +67,7 @@ A collection of small, self-contained projects developed to enhance coding skill
 
 ### Duolingo Solver
 
-<video controls width="800">
-  <source src="./Demos/Duolingo.mp4" type="video/mp4">
-  <img src="./Demos/Duolingo_poster.jpg" alt="Duolingo Solver Demo">
-</video>
+https://github.com/user-attachments/assets/35436878-f191-4481-8872-89d29c68ee4a
 
 **Language Exercise Automator**
 - Automated solution for Duolingo Spanish exercises
