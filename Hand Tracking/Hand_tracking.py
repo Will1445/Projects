@@ -13,13 +13,12 @@ hands = mp_hands.Hands(
 )
 
 cap = cv2.VideoCapture(0)
-
-# Global variable to store the previous average x-coordinate of the index and middle finger tips.
 prev_finger_x = None
+
 # Threshold for detecting a significant lateral movement (normalized coordinate range: 0-1).
 finger_movement_threshold = 0.02
 
-# Cooldown parameters: only one scroll command per gesture (0.5 seconds).
+# Only one scroll command per gesture (0.5 seconds).
 SCROLL_COOLDOWN = 0.5
 last_scroll_time = 0
 
@@ -45,11 +44,9 @@ def is_finger_open(tip, pip):
     return tip.y < pip.y
 
 def scroll_left():
-    # Simulate Ctrl+Left Arrow (e.g., for switching desktops or scrolling left)
     pyautogui.hotkey('ctrl', 'left')
 
 def scroll_right():
-    # Simulate Ctrl+Right Arrow (e.g., for switching desktops or scrolling right)
     pyautogui.hotkey('ctrl', 'right')
 
 while True:
@@ -67,7 +64,7 @@ while True:
             # Draw the hand landmarks.
             mp_draw.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS)
 
-            # Get the hand label ("Left" or "Right") for the current hand.
+            # Get the hand label "Left" or "Right" for the current hand.
             hand_label = results.multi_handedness[idx].classification[0].label
             landmarks = hand_landmarks.landmark
 
@@ -83,7 +80,6 @@ while True:
                                         landmarks[mp_hands.HandLandmark.PINKY_PIP])
 
 
-            # Optionally, display the overall finger count.
             finger_count = sum([thumb_open, index_open, middle_open, ring_open, pinky_open])
             cv2.putText(frame, f"Fingers: {finger_count}", (10, 50 + idx * 50),
                         cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
@@ -96,7 +92,7 @@ while True:
                                    landmarks[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].x) / 2
 
 
-                # If we have a previous position, compare to detect lateral movement.
+                # Compare previous position to detect lateral movement.
                 if prev_finger_x is not None:
                     dx = finger_to_track - prev_finger_x
                     if abs(dx) > finger_movement_threshold:
@@ -105,16 +101,15 @@ while True:
                         if current_time - last_scroll_time > SCROLL_COOLDOWN:
                             if dx > 0:
                                 message = "Finger moved right"
-                                scroll_right()  # Simulate scrolling right
+                                scroll_right()  # scroll right
                             else:
                                 message = "Finger moved left"
-                                scroll_left()   # Simulate scrolling left
+                                scroll_left()   # scroll left
                             last_scroll_time = current_time
                             cv2.putText(frame, message, (10, 150),
                                         cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
                 prev_finger_x = finger_to_track
             else:
-                # Reset tracking if the condition isn't met.
                 prev_finger_x = None
 
     cv2.imshow("Finger Motion to Scroll", frame)

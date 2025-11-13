@@ -15,7 +15,9 @@ manual_synonyms = {
     "chico": {"nino"},
     "marido": {"esposo"},
     "marida": {"esposa"},
-    "ok": {"bien"}
+    "ok": {"bien"},
+    "elegante" : {"guapo"},
+    "gente" : {"personas"}
 }
 
 def select_the_correct_meaning(driver):

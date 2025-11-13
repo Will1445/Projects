@@ -28,17 +28,19 @@ last_question = None
 
 while True:
 # Extract the question text
-    question = driver.find_element(By.XPATH, "//h1[@data-test='challenge-header']").text
-    print("Current Question:", question)
+    try:
+        question = driver.find_element(By.XPATH, "//h1[@data-test='challenge-header']").text
+        print("Current Question:", question)
 
-    if question == 'Write this in English':
-        write_this_in_english(driver)
-    elif question == 'Select the correct meaning':
-        select_the_correct_meaning(driver) 
-    elif question == 'Write this in Spanish':
-        write_this_in_spanish(driver)
-    else:
-        print('Question not yet defined')
-
+        if question == 'Write this in English':
+            write_this_in_english(driver)
+        elif question == 'Select the correct meaning':
+            select_the_correct_meaning(driver) 
+        elif question == 'Write this in Spanish':
+            write_this_in_spanish(driver)
+        else:
+            print('Question not yet defined')
+    except:
+        continue
 
     time.sleep(0.5)  # Check for new questions every 0.5 seconds

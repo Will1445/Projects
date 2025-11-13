@@ -66,6 +66,9 @@ A collection of small, self-contained projects developed to enhance coding skill
 - Mathematical visualization of rotating epicycles
 
 ### Duolingo Solver
+
+![Demo Animation](./demos/Duolingo.gif)
+
 **Language Exercise Automator**
 - Automated solution for Duolingo Spanish exercises
 - **Setup:**
