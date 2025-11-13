@@ -67,9 +67,9 @@ A collection of small, self-contained projects developed to enhance coding skill
 
 ### Duolingo Solver
 
-<video src="Demos/Duolingo.mp4" width="800" poster="Demos/poster.jpg" controls muted>
-  <img src="Demos/Duolingo_poster.jpg" alt="Duolingo Solver Demo">
-  Your browser doesn't support HTML5 video.
+<video controls width="800">
+  <source src="./Demos/Duolingo.mp4" type="video/mp4">
+  <img src="./Demos/Duolingo_poster.jpg" alt="Duolingo Solver Demo">
 </video>
 
 **Language Exercise Automator**
