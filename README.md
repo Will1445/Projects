@@ -22,6 +22,13 @@ These are small, self-contained projects that I work on to further my coding ski
 - `interface.py` can be used to host the contents of this database to an ngrok web server 
 
 
+## Optical Raytracer 
+
+- A file for simulating the path of optical rays through different lenses 
+- Has a 3D visualisation along with a PyQt5 GUI to dynamically change the simulated optical elements 
+
+
+
 ## Hand Tracking
 
 - A simple ML program to track hand motion through the provided camera
