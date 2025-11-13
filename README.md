@@ -1,50 +1,85 @@
-# Welcome to my projects
+# Project Portfolio
 
-These are small, self-contained projects that I work on to further my coding skills across multiple languages. Below is an outline of each project. 
+A collection of small, self-contained projects developed to enhance coding skills across multiple languages.
 
-## Qiskit
+## Project Overview
 
-- A collection of programs made using the Qiskit package
+| Project | Description | Skills |
+|---------|-------------|--------------|
+| **[Qiskit](#qiskit)** | Quantum computing programs | Qiskit, Python |
+| **[Remote Access Trojan](#remote-access-trojan)** | Remote administration tool | Python, C++, Networking |
+| **[Spotify Logger](#spotify-logger)** | Music listening tracker | Spotify API, SQLite, ngrok |
+| **[Optical Raytracer](#optical-raytracer)** | Light simulation through lenses | Python, PyQt5, 3D Visualization |
+| **[Hand Tracking](#hand-tracking)** | Gesture-based control system | Python, Machine Learning, OpenCV |
+| **[Epicycles](#epicycles-visualiser)** | Fourier series visualization | Python, Mathematics, Visualization |
+| **[Duolingo Solver](#duolingo-solver)** | Language exercise automation | Automation, Web Scraping |
 
+## Projects
 
-## Remote Access Trojan
+### Qiskit
+**Quantum Computing Programs**
+- Collection of quantum algorithms and simulations using IBM's Qiskit framework
+- Explore quantum circuits, gates, and quantum state manipulation
 
-- The target and recipient half of a remote access trojan
-- This is set to receive data from the C++ compiled executable ran on the target machine
-- Allows the user to access the target's command line along with live screen viewing and keylogger options 
-- This directory contains its own README to explain the core functionality further
+### Remote Access Trojan
+**Remote Administration Tool**
+- Client-server architecture for remote system management
+- **Features:**
+  - Remote command execution
+  - Live screen sharing
+  - Keystroke monitoring
+- See project's README for detailed functionality and usage
 
+### Spotify Logger
+**Music Listening Analytics**
+- Tracks and logs Spotify listening history to local database
+- **Components:**
+  - `song_logger.py` - Main tracking script
+  - `database_viewer.py` - Local database inspection
+  - `interface.py` - Web server hosting via ngrok
+- Builds personalized music listening statistics
 
-## Spotify Logger
+### Optical Raytracer
+**Light Propagation Simulator**
+- Simulates optical ray paths through various lens configurations
+- **Features:**
+  - 3D ray visualization
+  - Dynamic PyQt5 GUI
+  - Real-time parameter adjustment
+  - Multiple optical element support
 
-- A song logger for Spotify, it will track your listened songs and save them to a local database
-- `database_viewer.py` can be used to view the local database after running the song logger
-- `interface.py` can be used to host the contents of this database to an ngrok web server 
+### Hand Tracking
+**Gesture Recognition System**
+- Real-time hand gesture detection for system control
+- **Functionality:**
+  - ML-powered hand tracking via webcam
+  - Gesture-based scrolling on macOS
 
+### Epicycles Visualiser
+**Fourier Series Animation**
+- Demonstrates Fourier series approximation of 2D shapes
+- **Usage:**
+  1. Run the program
+  2. Click to start drawing a shape
+  3. Click again to complete
+  4. Watch Fourier decomposition in real-time
+- Mathematical visualization of rotating epicycles
 
-## Optical Raytracer 
+### Duolingo Solver
+**Language Exercise Automator**
+- Automated solution for Duolingo Spanish exercises
+- **Setup:**
+  - Chrome debug mode required
+  - Start practice session before execution
+- **Status:** Limited question coverage (see `utils/` for supported types)
 
-- A file for simulating the path of optical rays through different lenses 
-- Has a 3D visualisation along with a PyQt5 GUI to dynamically change the simulated optical elements 
+## Skills
 
+**Languages:** Python, C++  
+**Frameworks:** Qiskit, PyQt5, OpenCV  
+**APIs:** Spotify Web API  
+**Tools:** ngrok, Chrome DevTools
 
+---
 
-## Hand Tracking
-
-- A simple ML program to track hand motion through the provided camera
-- By raising your first two fingers on your right hand, you can send scroll right and scroll left commands on macOS by moving your hand in that direction
-
-
-## Epicycles Visualiser 
-
-- A visualisation of how Fourier series can be used to model 2D images
-- Run the file and click to begin drawing out a shape
-- Click again to finish drawing and the program will automatically draw out the shape using rotating circles of constant rotational velocity
-
-
-## Duolingo Solver
-
-- A bot to automatically solve Spanish Duolingo exercises
-- To use, open Chrome in debug mode and start a practice session before starting the file
-- Current only a few questions have automatic answers, shown in the utils folder
-
+*This portfolio showcases progressive learning in software development, quantum computing, computer vision, and automation.*
