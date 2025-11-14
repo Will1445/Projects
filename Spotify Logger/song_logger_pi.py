@@ -13,13 +13,12 @@ with open("spotify_config.txt") as f:
 client_id = credentials["SPOTIPY_CLIENT_ID"]
 client_secret = credentials["SPOTIPY_CLIENT_SECRET"]
 redirect_uri = credentials["SPOTIPY_REDIRECT_URI"]
-scope = "user-read-playback-state"
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     client_id=client_id,
     client_secret=client_secret,
     redirect_uri=redirect_uri,
-    scope=scope
+    scope="user-read-playback-state"
 ))
 
 prev_id = None
@@ -71,8 +70,10 @@ try:
                     artist_info = sp.artist(artist_id)
                     genres = artist_info.get('genres', [])
                     genre_str = ', '.join(genres) if genres else 'Unknown'
+                    
                 except Exception:
                     genre_str = 'Unknown'
+
 
                 name = track['name']
                 album = track['album']['name']
