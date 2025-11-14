@@ -79,7 +79,7 @@ https://github.com/user-attachments/assets/35436878-f191-4481-8872-89d29c68ee4a
 - **Setup:**
   - Chrome debug mode required
   - Start practice session before execution
-- **Status:** Limited question coverage (see `utils/` for supported types)
+- **Status:** Limited question coverage (see `utils/` for supported question types)
 
 ### Epicycles Visualiser
 
