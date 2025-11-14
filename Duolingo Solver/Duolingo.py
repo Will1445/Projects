@@ -6,28 +6,23 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 from deep_translator import GoogleTranslator
 from nltk.corpus import wordnet
-import difflib
-import re
 import time
-import string
 
 from utils.Write_this_in_English import write_this_in_english
 from utils.Write_this_in_Spanish import write_this_in_spanish
 from utils.Select_the_correct_meaning import select_the_correct_meaning
 from utils.Fill_in_the_blank import fill_in_the_blank
 
-# Attach to running Chrome
+# Connect to chrome 
 chrome_options = Options()
 chrome_options.debugger_address = "127.0.0.1:9222"
 
 service = Service("/opt/homebrew/bin/chromedriver") 
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
-# Variable to store the last answered question
 last_question = None
 
 while True:
-# Extract the question text
     try:
         question = driver.find_element(By.XPATH, "//h1[@data-test='challenge-header']").text
         print("Current Question:", question)
@@ -40,7 +35,9 @@ while True:
             write_this_in_spanish(driver)
         else:
             print('Question not yet defined')
+            
     except:
         continue
 
-    time.sleep(0.5)  # Check for new questions every 0.5 seconds
+    time.sleep(0.5) 
+    

@@ -11,8 +11,9 @@ A collection of small, self-contained projects developed to enhance coding skill
 | **[Spotify Logger](#spotify-logger)** | Music listening tracker | Spotify API, SQLite, ngrok |
 | **[Optical Raytracer](#optical-raytracer)** | Light simulation through lenses | Python, PyQt5, 3D Visualization |
 | **[Hand Tracking](#hand-tracking)** | Gesture-based control system | Python, Machine Learning, OpenCV |
-| **[Epicycles](#epicycles-visualiser)** | Fourier series visualization | Python, Mathematics, Visualization |
 | **[Duolingo Solver](#duolingo-solver)** | Language exercise automation | Automation, Web Scraping |
+| **[Epicycles](#epicycles-visualiser)** | Fourier series visualization | Python, Mathematics, Visualization |
+
 
 ## Projects
 
@@ -27,10 +28,10 @@ https://github.com/user-attachments/assets/c314f649-42a4-41e6-b960-95613c855e65
 
 **Remote Administration Tool**
 - Client-server architecture for remote system management
+- Demo above shows a connection to a Linux machine 
 - **Features:**
   - Remote command execution
   - Live screen sharing
-  - Keystroke monitoring
 - See project's README for detailed functionality and usage
 
 ### Spotify Logger

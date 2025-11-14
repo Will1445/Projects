@@ -4,7 +4,7 @@ import sqlite3
 from spotipy.oauth2 import SpotifyOAuth
 from dotenv import load_dotenv
 
-# --- Spotify Authentication ---
+# Spotify API authentication
 credentials = {}
 with open("spotify_config.txt") as f:
     for line in f:
@@ -23,11 +23,11 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     scope=scope
 ))
 
-# Setup SQLite database 
+# Setup SQLite 
 conn = sqlite3.connect("spotify_history.db")
 cursor = conn.cursor()
 
-# Create table if it doesn't exist
+# Create table
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS playback_history (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
