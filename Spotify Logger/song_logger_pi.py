@@ -1,8 +1,7 @@
 import spotipy
+from spotipy.oauth2 import SpotifyOAuth
 import time
 import sqlite3
-from spotipy.oauth2 import SpotifyOAuth
-from dotenv import load_dotenv
 
 # Spotify API authentication
 credentials = {}
@@ -22,6 +21,8 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     redirect_uri=redirect_uri,
     scope=scope
 ))
+
+prev_id = None
 
 # Setup SQLite 
 conn = sqlite3.connect("spotify_history.db")
@@ -43,9 +44,7 @@ CREATE TABLE IF NOT EXISTS playback_history (
 """)
 conn.commit()
 
-# --- Track playback ---
-last_track_id = None
-
+# Song logger
 try:
     while True:
         try:
@@ -59,15 +58,15 @@ try:
             track = current['item']
             track_id = track['id']
 
-            # Only log when the track changes
-            if track_id != last_track_id:
-                last_track_id = track_id
+            # Log song on change
+            if track_id != prev_id:
+                prev_id = track_id
 
                 artist = track['artists'][0]
                 artist_name = artist['name']
                 artist_id = artist['id']
 
-                # Fetch genres for this artist
+                # Genres taken from spotify database
                 try:
                     artist_info = sp.artist(artist_id)
                     genres = artist_info.get('genres', [])
@@ -75,7 +74,6 @@ try:
                 except Exception:
                     genre_str = 'Unknown'
 
-                # Log track data
                 name = track['name']
                 album = track['album']['name']
                 popularity = track.get('popularity', 0)

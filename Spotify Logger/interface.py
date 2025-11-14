@@ -1,7 +1,6 @@
 from flask import Flask, render_template_string
 import sqlite3
 import datetime
-import json
 from datetime import timedelta
 
 app = Flask(__name__)

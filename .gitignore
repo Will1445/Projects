@@ -2,3 +2,4 @@
 spotify_config.txt
 spotify_history.db
 requirements.txt
+.cache
