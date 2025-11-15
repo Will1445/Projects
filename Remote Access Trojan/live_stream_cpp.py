@@ -19,7 +19,7 @@ mouse_enabled = False
 window_rect = (0, 0, 0, 0)
 
 
-# Invert mouse controlled state when required key ('q') is pressed
+# Invert mouse controlled state when required key ('f2') is pressed
 def on_press(key):
     global mouse_enabled 
     try:

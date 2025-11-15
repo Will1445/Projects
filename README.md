@@ -8,7 +8,7 @@ A collection of small, self-contained projects developed to enhance coding skill
 |---------|-------------|--------------|
 | **[Qiskit](#qiskit)** | Quantum computing programs | Qiskit, Python |
 | **[Remote Access Trojan](#remote-access-trojan)** | Remote administration tool | Python, C++, Networking |
-| **[Spotify Logger](#spotify-logger)** | Music listening tracker | Spotify API, SQLite, ngrok |
+| **[Spotify Logger](#spotify-logger)** | Music listening tracker | Spotify API, SQLite, ngrok, html |
 | **[Optical Raytracer](#optical-raytracer)** | Light simulation through lenses | Python, PyQt5, 3D Visualization |
 | **[Hand Tracking](#hand-tracking)** | Gesture-based control system | Python, Machine Learning, OpenCV |
 | **[Duolingo Solver](#duolingo-solver)** | Language exercise automation | Automation, Web Scraping |
@@ -17,10 +17,12 @@ A collection of small, self-contained projects developed to enhance coding skill
 
 ## Projects
 
-### Qiskit
+### Qiskit (Work in Progress)
 **Quantum Computing Programs**
 - Collection of quantum algorithms and simulations using IBM's Qiskit framework
 - Explore quantum circuits, gates, and quantum state manipulation
+
+-----------
 
 ### Remote Access Trojan
 
@@ -96,7 +98,7 @@ https://github.com/user-attachments/assets/a47fe299-442e-42d7-ab8d-fe27bc7acc1d
 
 ## Skills
 
-**Languages:** Python, C++  
+**Languages:** Python, C++, html  
 **Frameworks:** Qiskit, PyQt5, OpenCV  
 **APIs:** Spotify Web API  
 **Tools:** ngrok, Chrome DevTools
