@@ -22,7 +22,7 @@ A collection of small, self-contained projects developed to enhance coding skill
 - Collection of quantum algorithms and simulations using IBM's Qiskit framework
 - Explore quantum circuits, gates, and quantum state manipulation
 
------------
+---
 
 ### Remote Access Trojan
 
@@ -36,6 +36,8 @@ https://github.com/user-attachments/assets/c314f649-42a4-41e6-b960-95613c855e65
   - Live screen sharing
 - See project's README for detailed functionality and usage
 
+---
+
 ### Spotify Logger
 
 https://github.com/user-attachments/assets/c3cc32d8-d1da-4a41-9bc5-0c9b64f1e7db
@@ -47,6 +49,8 @@ https://github.com/user-attachments/assets/c3cc32d8-d1da-4a41-9bc5-0c9b64f1e7db
   - `database_viewer.py` - Local database inspection
   - `interface.py` - Web server hosting via ngrok
 - Builds personalized music listening statistics
+
+---
 
 ### Optical Raytracer
 
@@ -65,12 +69,16 @@ https://github.com/user-attachments/assets/c3cc32d8-d1da-4a41-9bc5-0c9b64f1e7db
   - Real-time parameter adjustment
   - Multiple optical element support
 
+---
+
 ### Hand Tracking
 **Gesture Recognition System**
 - Real-time hand gesture detection for system control
 - **Functionality:**
   - ML-powered hand tracking via webcam
   - Gesture-based scrolling on macOS
+
+---
 
 ### Duolingo Solver
 
@@ -82,6 +90,8 @@ https://github.com/user-attachments/assets/35436878-f191-4481-8872-89d29c68ee4a
   - Chrome debug mode required
   - Start practice session before execution
 - **Status:** Limited question coverage (see `utils/` for supported question types)
+
+---
 
 ### Epicycles Visualiser
 
@@ -95,6 +105,8 @@ https://github.com/user-attachments/assets/a47fe299-442e-42d7-ab8d-fe27bc7acc1d
   3. Click again to complete
   4. Watch Fourier decomposition in real-time
 - Mathematical visualization of rotating epicycles
+
+---
 
 ## Skills
 
