@@ -19,7 +19,7 @@ A collection of self-contained projects developed to enhance coding skills acros
 
 ### Qiskit (Work in Progress)
 **Quantum Computing Programs**
-- Collection of quantum algorithms and simulations using IBM's Qiskit framework
+- Quantum algorithms and simulations using IBM's Qiskit framework
 - Explore quantum circuits, gates, and quantum state manipulation
 
 ---
