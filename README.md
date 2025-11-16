@@ -1,6 +1,6 @@
 # Project Portfolio
 
-A collection of small, self-contained projects developed to enhance coding skills across multiple languages.
+A collection of self-contained projects developed to enhance coding skills across multiple languages.
 
 ## Project Overview
 
